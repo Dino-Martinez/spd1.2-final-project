@@ -1,3 +1,24 @@
 canvas {
   background: #ccc;
 }
+.nav-title {
+  position:absolute;
+  top:0.3%;
+  left: 25px;
+  transition: all .3s ease;
+}
+.nav-title h1 {
+  background-size: 200% auto;
+  background-image: -webkit-linear-gradient(45deg, #F16093 33%, #60F176 33% 70%, #70DBF1 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: swipe 3s ease 0s infinite forwards;
+}
+@keyframes swipe {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
